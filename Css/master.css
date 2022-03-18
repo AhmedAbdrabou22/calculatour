@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    overflow-y: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#647299;
+}
+
+.header .calc{
+    width:40%;
+    border-radius: 10px;
+    margin:20px auto;
+    padding:20px;
+}
+.header .calc input[type=text]{
+    width:90%;
+    padding:20px;
+    height:150px;
+    background-color:#181f32;
+    color:white;
+    display: block;
+    margin:auto;
+    border-radius: 10px;
+    outline:none;
+    border:none;
+    direction: rtl;
+    font-size: 30px;
+    color:rgb(0, 0, 0)
+}
+
+.header .nums{
+    width:90%;
+    background-color:rgb(48,50,53);
+    padding:10px;
+    margin:25px auto;
+    border-radius: 10px;
+}
+.header .nums .numsabove{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:25px
+}
+.header .nums .numsabove div{
+    width:15%;
+    background-color: white;
+    text-align: center;
+    padding:15px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.header .nums .res div{
+    width:40%;
+    text-align: center;
+}
+.header .nums .res{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header .nums .res button{
+    padding:15px 20px;
+    width:100%;
+    outline: none;
+    border: none;
+    background-color:#c22a19;
+    color:white;
+}
+.header .nums .numsabove .reset{
+    background-color: #647299;
+}
+.header .nums .res .reset{
+    background-color:#647299;
+}
+
+@media(max-width:992px){
+    .header{
+        text-align:center;
+    }
+    .header .calc{
+        width:100%;
+    }
+    .header .nums .numsabove .reset{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nums .numsabove div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
